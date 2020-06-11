@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lissajous Curve Table</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <canvas id="canvas"></canvas>
+        <div id="info">
+            <section id="description">
+                <h1>Lissajous Curve Table</h1>
+                <p>
+                    Named after <i>Jules Antoine Lissajous</i>, also known as <b>Bowditch curve</b>
+                    is the graph of a system of parametric equations which describe <i>complex harmonic motion</i>
+                </p>
+                <p>using following formula:</p>
+                <p class="formula">
+                    &#119909; = r * sin(a&theta; + &delta;)<br />
+                    &#119910; = r * sin(b&theta;)<br />
+                </p>
+                <ul>
+                    <li>
+                        <b>r</b> is a radius of the circles
+                    </li>
+                    <li>
+                        <b>a</b> and <b>b</b> are the rotation magnitudes (horizontal and vertical circles)
+                    </li>
+                    <li>
+                        <b>&theta;</b> is the current angle of rotation
+                    </li>
+                    <li>
+                        <b>&delta;</b> is <b>&pi; / 2</b>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- <div id="controls">
+                <table>
+                    <tr>
+                        <td>
+                            <span>Numerator</span>
+                        </td>
+                        <td>
+                            <input type="range" min="1" max="7" step="1" name="numerator" value="6" />
+                        </td>
+                        <td>
+                            <small>6</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Denominator</span>
+                        </td>
+                        <td>
+                            <input type="range" min="1" max="9" step="1" name="denominator" value="5" />
+                        </td>
+                        <td>
+                            <small>5</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Color offset</span>
+                        </td>
+                        <td>
+                            <input type="range" min="0" max="360" step="1" name="color_offset" value="173" />
+                        </td>
+                        <td>
+                            <small>173</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Duration</span>
+                        </td>
+                        <td>
+                            <input type="range" min="1" max="16" step="1" name="duration" value="5" />
+                        </td>
+                        <td>
+                            <small>5</small>
+                        </td>
+                    </tr>
+                </table>
+            </div> -->
+        </div>
+    </div>
+    <!-- js -->
+    <script src="app.js"></script>
+</body>
+</html>
