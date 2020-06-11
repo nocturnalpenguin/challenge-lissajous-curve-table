@@ -25,13 +25,27 @@ html, body {
         min-height: 100vh;
         padding: 0 15px;
     }
-    
-    canvas {
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
-        @media(min-width: 991px) {
-            margin: 0 15px;
+
+    #canvas-container {
+        position: relative;
+
+        #background-canvas {
+            position: absolute;
+            z-index: 0;
+        }
+
+        #canvas {
+            z-index: 1;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        #background-canvas, #canvas {
+            @media(min-width: 991px) {
+                margin: 0 15px;
+            }
         }
     }
+    
     
     #info {
         display: flex;
